@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: webapp
-          image: xcoulon/go-url-shortener:0.2.0
+          image: kube/employee
           ports:
             - containerPort: 5432
           envFrom:
