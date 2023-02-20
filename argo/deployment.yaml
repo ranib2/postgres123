@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webapp
+  name: postgress
 spec:
   replicas: 1
   selector:
@@ -10,11 +10,11 @@ spec:
   template:
     metadata:
       labels:
-        app: webapp
+        app: postgress
     spec:
       containers:
-        - name: go-url-shortener
-          image: xcoulon/go-url-shortener:0.1.0
+        - name: postgress
+          image: postgres:9.6.5
           imagePullPolicy: "IfNotPresent"
           ports:
             - containerPort: 5432
