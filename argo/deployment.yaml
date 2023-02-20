@@ -3,6 +3,10 @@ kind: Deployment
 metadata:
   name: webapp
 spec:
+  syncPolicy:
+    automated:
+      prune: true
+      allowEmpty: true
   selector:
       matchLabels:
         app.kubernetes.io/name: sawtooth-0
