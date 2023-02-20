@@ -9,6 +9,6 @@ spec:
         app: webapp
     spec:
       containers:
-      - image: alpine
+      - image: alpine:latest
         name: go-url-shortener
         
