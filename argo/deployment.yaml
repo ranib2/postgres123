@@ -3,10 +3,10 @@ kind: Deployment
 metadata:
   name: webapp
 spec:
-  template:
   selector:
       matchLabels:
         app.kubernetes.io/name: sawtooth-0
+  template:
     metadata:
       labels:
         app: webapp
