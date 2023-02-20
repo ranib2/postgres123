@@ -1,7 +1,7 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: postgres
+  name: webapp
 spec:
   replicas: 1
   selector:
@@ -10,10 +10,10 @@ spec:
   template:
     metadata:
       labels:
-        app: postgres
+        app: webapp
     spec:
       containers:
-        - name: postgres
+        - name: webapp
           image: docker pull xcoulon/go-url-shortener:0.2.0
           imagePullPolicy: "IfNotPresent"
           ports:
