@@ -4,9 +4,6 @@ metadata:
   name: webapp
 spec:
   replicas: 1
-  selector:
-      matchLabels:
-        app.kubernetes.io/name: sawtooth-0
   template:
     metadata:
       labels:
@@ -15,8 +12,3 @@ spec:
       containers:
         - name: webapp
           image: xcoulon/go-url-shortener:0.1.0
-          ports:
-            - containerPort: 5432
-          envFrom:
-            - configMapRef:
-                name: postgres-config
