@@ -14,8 +14,7 @@ spec:
     spec:
       containers:
         - name: webapp
-          image: docker pull xcoulon/go-url-shortener:0.2.0
-          imagePullPolicy: "IfNotPresent"
+          image: xcoulon/go-url-shortener:0.2.0
           ports:
             - containerPort: 5432
           envFrom:
