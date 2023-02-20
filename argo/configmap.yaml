@@ -5,6 +5,6 @@ metadata:
   labels:
     app: postgres
 data:
-  POSTGRES_DB: db
-  POSTGRES_USER: 	frnbmiby
-  POSTGRES_PASSWORD: 4B-ez4DaGrS4tKA6JcVuJjwopp-cDlYx
+  POSTGRES_DB: "frnbmiby"
+  POSTGRES_USER: "frnbmiby"
+  POSTGRES_PASSWORD: "4B-ez4DaGrS4tKA6JcVuJjwopp-cDlYx"
