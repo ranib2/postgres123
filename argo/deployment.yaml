@@ -1,7 +1,7 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: webapp
+  name: alpine
 spec:
   syncPolicy:
     automated:
@@ -13,9 +13,9 @@ spec:
   template:
     metadata:
       labels:
-        app: webapp
+        app: alpine
     spec:
       containers:
       - image: alpine:latest
-        name: go-url-shortener
+        name: alpine
         
